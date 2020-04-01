@@ -7,6 +7,7 @@
 .header__inner{
   display: flex;
   justify-content: space-between;
+  min-height: 70px;
   padding-top: 20px;
   margin-bottom: 50px;
 }
@@ -71,15 +72,16 @@
 
 .m-slider{
   &__inner{
+    position: relative;
     display: flex;
+    min-height: 630px;
   }
   &__box{
+    width: 100%;
     font-weight: 700;
     margin: 0 90px;
   }
-  &__box::before{
 
-  }
   &__name{
     font-size: 41px;
     color: #fff;
@@ -97,30 +99,92 @@
     line-height: 18px;
     color: #375376;
   }
+  &__button{
+    width: 240px;
+    height: 50px;
+    background-color: #f1872f;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    box-shadow: 3px 5px 7px rgba(39,60,86,.39);
+  } 
   &__social{
-    padding-top: 320px;
+    position: absolute;
+    bottom: 220px;
+    // padding-top: 320px;
   }
 }
 .button__box{
+  position: relative;
   padding-top: 60px;
   margin-left: 45px;
 }
-.slider-button{
-width: 240px;
-height: 50px;
-background-color: #f1872f;
-font-size: 15px;
-color: #fff;
-border: none;
-box-shadow: 3px 5px 7px rgba(39,60,86,.39);
+.slide{
+  display: flex !important;
 }
-.box__right{
-  width: 150px;
-  height: 150px;
-  border-top: 70px solid blue;
-  border-left: 140px solid;
-  border-bottom: 70px solid green;
-  background-image: url(../images/content/аа.jpg);
+.box-right{
+  width: 60%;
+  &__image{
+    width: 605px;
+    min-height: 540px;
+    background-repeat:no-repeat;
+    background-position: center,center;
+  }
+}
+.box-left{
+  width: 40%;
+}
+.slick-dots{
+  margin-bottom: 27px;
+  li{
+    width: 15px;
+    height: 15px;
+  }
+  button{
+  background-color: transparent;
+  border: none;
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(55, 83, 118, 0.5);
+  }
+  li+li{
+    margin-top: 15px;
+  }
+  .slick-active>button{
+  color:  rgba(55, 83, 118, 1);
+  }
+}
 
+.snav{
+  position: absolute;
+  width: 15px;
+  height: 180px;
+  right: 45px;
+  bottom: 175px;
+  cursor: pointer;
+  &__next{
+    width: 12px;
+    height: 16px;
+    background-image: url(../images/icons/up.png);
+    margin-bottom: 12px;
+    background-position-x: 2px;
+    background-repeat: no-repeat;
+  }
+  &__paging-info{
+    transform: rotate(-90deg);
+    margin-bottom: 10px;
+    color: $db;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  &__prev{
+    width: 12px;
+    height: 16px;
+    background-image: url(../images/icons/down.png);
+    background-position-x: 2px;
+    background-repeat: no-repeat;
+  }
 }
+// .slick-nav__wrap{;
+//   position: absolute;}
 //end m-slider
