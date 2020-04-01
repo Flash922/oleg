@@ -1,0 +1,53 @@
+html{
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+a{
+  text-decoration: none;
+  color: #252726;
+}
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'AvenirNextCyr', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #252726; ;
+  height: 100%;
+}
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+.button-m{
+  height: 30px;
+  width: 162px;
+  border: solid 2px #375376;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.social{
+  width: 17px;
+  .icon-vk{
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 720px){
+  .container-fluid{
+    padding: 0 15px;
+  }
+}
