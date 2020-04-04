@@ -14,7 +14,14 @@ ul,li{
   margin: 0;
   padding: 0;
 }
+h4{
+  font-size: 18px;
+  font-weight: 600;
+}
 body{
+  display:flex;
+  flex-direction: column;
+  height: 100%;
   font-family: 'AvenirNextCyr', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -23,13 +30,48 @@ body{
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #e5faf4;
-  color: #252726; ;
-  height: 100%;
+  color: #252726;
+}
+header{
+flex: 0 0 auto;
+}
+.main-content{
+flex: 1 0 auto;
+}
+footer{
+flex: 0 0 auto;
 }
 .container{
   max-width: 1300px;
+  min-width: 300px;
   margin: 0 auto;
   padding: 0 8px;
+}
+.logo{
+  display:flex;
+  max-width: 160px;
+  &__img{
+    min-width: 52px;
+    height: 52px;
+    background-image: url(../images/icons/logo.png);
+    background-repeat: no-repeat;
+  }
+  &__info{ 
+    text-transform: uppercase;
+    color: #2b415c;
+  }
+  &__name{
+    font-family: "VAGRoundCyrillic", sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+  &__spec{
+    font-family: "AvenirNextCyr", sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 10px;
+  }
 }
 .button-m{
   height: 30px;
@@ -50,8 +92,18 @@ body{
     margin-bottom: 20px;
   }
 }
-@media (max-width: 720px){
-  .container-fluid{
-    padding: 0 15px;
+@media (max-width: 300px){
+  .container{
+    padding: 0 5px;
+  }
+}
+// @media (max-width: 480px){
+//   .container{
+//     padding: 0 30px;
+//   }
+// }
+@media (max-width: 1200px){
+  .container{
+    padding: 0 30px;
   }
 }
