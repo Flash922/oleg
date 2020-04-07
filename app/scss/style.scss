@@ -257,7 +257,135 @@
 //end reviews
 
 //start contact
+.contact__inner{
+  margin-bottom: 85px;
+}
+.contact__title{
+  margin-left: 265px;
+}
 //end contact
+//start footer
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  align-items: center;
+  .icon-vk{
+    margin: 0 13px 0 auto;
+  }
+}
+.year{
+  margin-left: auto;
+  font-weight: 500;
+}
+.contact__title{
+  max-width: 470px;
+  min-height: 130px;
+  font-size: 18px;
+  color: #375376;
+  font-weight: 700;
+  line-height: 24px;
+  &-1{
+    max-width: 280px;
+    line-height: 79px;
+    background-image: url(../images/contact/contact-back.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    font-weight: 600;
+    height: 90px;
+    padding-top: 10px;
+  }
+  &-3{
+    margin-left: 209px;
+  }
+}
+.form{
+  &__wrapper{
+  padding-top: 35px;
+  }
+  padding-top: 35px;
+  font-size: 12px;
+  font-weight: 600;
+  width: 532px;
+  height: 279px;
+  border-radius: 10px;
+  background-color: #bdf3e4;
+  box-shadow: 2px 4px 10px rgba(0,0,0,.27);
+  padding: 25px 40px 25px 40px;
+  &__box{
+    height: 200px;
+    width: 100%;
+    display: flex;
+  }
+  &__fieldset{
+    div+div,input{
+      margin-top: 7px;
+    }
+    border: none;
+    padding:0;
+  }
+  &__row{
+    width: 190px;
+  }
+  textarea,input{
+    font-size: 15px;
+    background-color: #fefefe;
+    border: 0;
+    padding: 10px;
+  }
+  input{
+    width: 190px;
+    height: 31px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  textarea{
+    width: 207px;
+    height: 155px;
+    border-radius: 10px/7px;
+    resize: none;
+    margin-top: 12px;
+  }
+  button{
+    font-size: 16px;
+    color: #375376;
+    width: 138px;
+    height: 30px;
+    border-radius: 6px/7px;
+    background-color: transparent;
+    border: solid 2px #375376;
+    margin-left: 35px;
+  }
+}
+button{
+    font-size: 26px;
+    color: #375376;
+    width: 138px;
+    height: 30px;
+    border-radius: 6px/7px;
+    background-color: transparent;
+    text-transform: lowercase;
+  }
+//end footer
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1062px){
+  .button__box{
+    display: none;
+  }
+}
 @media (max-width: 1024px){
   .slick-dots {
     margin-left: 1px;
@@ -273,9 +401,9 @@
     //   margin-top: 2px;
     // }
   }
-  .button__box{
-    display: none;
-  }
+  // .button__box{
+  //   display: none;
+  // }
   .m-slider__inner{
     button{
     margin: 0 auto;
@@ -374,7 +502,7 @@
     bottom: 16%;
   }
 }
-@media (min-width: 1024px){
+@media (min-width: 1062px){
 .m-slider__inner>button{
     display: none;
     }

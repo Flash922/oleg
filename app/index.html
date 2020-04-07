@@ -213,11 +213,33 @@
       <div class="container">
         <div class="contact__inner">
           <div class="contact__title">
-            <div class="">Контакты</div>
-            <div class="">Свяжитесь со мной любым</div>
-            <div class="">удобным для Вас способом!</div>
+            <div class="contact__title-1">Контакты</div>
+            <div class="contact__title-2">Свяжитесь со мной любым</div>
+            <div class="contact__title-3">удобным для Вас способом!</div>
           </div>
-          <div class="contact__wrapper">
+          <div class="form__wrapper">
+            <form class="form" action="">
+              <div class="form__box">
+                <div class="form__message">
+                  <label for="contact__message">Оставить сообщение
+                    <textarea type="text" placeholder="Оставьте здесь свое сообщение."></textarea>
+                  </label>
+                </div>
+                <fieldset class="form__fieldset">
+                <div class="form__row">Ваше имя
+                  <input type="text">
+                </div>
+                <div class="form__row">Ваш номер телефона
+                    <input type="tel" minlength="11" placeholder="+375 29 0000000">
+                </div>
+                <div class="form__row">Ваш e-mail
+                    <input type="email">
+                </div>
+                </fieldset>
+              </div>
+              <button class="m-button" type="submit" >отправить</button>
+              </div>
+            </form>
             <div class="contact__form"></div>
             <div class="contact__info">
               <p></p>
@@ -233,15 +255,18 @@
     <div class="container">
       <div class="footer__inner">
         <a href="#" class="logo">
-          <div class="img-logo"></div>
-          <div class="info-logo">
-            <div class="name">олег мицкевич</div>
-            <div class="spec">ландшафтный дизайн</div>
+          <div class="logo__img"></div>
+          <div class="logo__info">
+            <div class="logo__name">олег мицкевич</div>
+            <div class="logo__spec">ландшафтный дизайн</div>
           </div>
         </a>
-        <div class="year">2020<span class="icon-copyright"></span>
+        <!-- <div class="unp">ИП Мицкевич Ю.Р
+          УНП 391735437</div> -->
+        <div class="year">2020 <span class="icon-copyright"></span>
         </div>
-        <div class="social"> <a class="vk" href=""></a><a class="insragram" href=""></a></div>
+          <a class="icon-vk" href=""></a>
+          <a class="icon-instagram" href=""></a>
       </div>
     </div>
   </footer>
