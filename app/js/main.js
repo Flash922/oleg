@@ -81,4 +81,25 @@
         appendDots: $('.pnav'),
     });
 });
-//end slider section portfolio
+
+$('.reviews__slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true,
+  responsive:[
+    {
+      breakpoint: 1360,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,   
+      }
+    },
+    {
+      breakpoint: 860,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    ]
+});

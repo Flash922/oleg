@@ -26,11 +26,16 @@ body{
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
-  background-image: url(../images/back8bit.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-color: #e5faf4;
   color: #252726;
+}
+.body-main{
+  background-image: url(../images/back8bit.png);
+}
+.body-portfolio{
+  background-image: url(../images/portfolio-page__back.png);
 }
 header{
 flex: 0 0 auto;
@@ -77,6 +82,7 @@ flex: 0 0 auto;
   height: 30px;
   width: 162px;
   border: solid 2px #375376;
+  color: #375376;
   font-size: 9px;
   text-transform: uppercase;
   font-weight: 500;
@@ -91,6 +97,12 @@ flex: 0 0 auto;
     display: block;
     margin-bottom: 20px;
   }
+}
+.title-30{
+    background-repeat: no-repeat;
+    font-size: 30px;
+    font-weight: 700;
+    color: #375376;
 }
 // @media (max-width: 300px){
 //   .container{

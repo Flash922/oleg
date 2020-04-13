@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="body-main">
   <header>
     <div class="container">
       <div class="header__inner">
@@ -21,7 +21,7 @@
         <ul class="header__menu">
         <li><a href="">главная</a></li>
         <li><a href="">услуги</a></li>
-        <li><a href="">портфолио</a></li>
+        <li><a href="portfolio.html">портфолио</a></li>
         <li><a href="">контакты</a></li>
         </ul>
         <a href="tel:+375297021751" class="contact-phone"><span class="icon-phone"></span>+375 29 702 17 51</a>
@@ -91,40 +91,38 @@
     <section class="causes">
       <div class="container">
         <div class="causes__inner">
-          <div class="causes__box">
-            <div class="causes__img"></div>
-            <h3>Озеленение</h3>
+          <div class="cb causes-box__2 col2 row2">
+            <img class="causes__img" src="images/causes/brush.png" alt="">
+            <h4>Озеленение</h4>
             <p>подчеркивает индивидуальные особенности сада. Одиночные деревья, группы растений, цветники, газоны, рокарии внесут яркие акценты и создадут уют. </p>
           </div>
-          <div class="causes__box">
-            <div class="causes__img"></div>
-            <h3>Декторативные</h3>
+          <div class="cb causes-box__3 col3 row3">
+            <img class="causes__img" src="images/causes/faucet.png" alt="">
+            <h4>Декторативные</h4>
             <p>водоемы,водопады,ручейки радуют глаз и умиротворяют душу. А вот системы орошения и дренажа носят чисто практический характер, но так же важны. </p>
           </div>
-          <div class="causes__box">
-            <div class="causes__img"></div>
-            <h3>5 причин почему</h3>
+          <div class="cb causes-box__1 col1 row1">
+            <div class="five-causes">5 причин почему</div>
             <p>Давайте знакомиться.</p>
             <p>
               Меня зовут Олег Мицкевич. Я – ландшафтный дизайнер. Моя работа начинается с  создания «рабочего» проекта, в котором учтены не только все Ваши пожелания, но и технические особенности их реализации. 
               Почему я делаю акцент на слове «рабочий» проект? Потому что за красивой картинкой должны стоять инженерные расчеты и практический опыт воплощения задуманного. Поэтому я всегда точно знаю, что и каким образом будет выполнено.
-              Я сопровождаю проект от начала до конца, все виды работ выполняются «под ключ».
             </p>
             <p>Один звонок – и все задуманное исполнится</p>
           </div>
-          <div class="causes__box">
-            <div class="causes__img"></div>
-            <h3>Проектирование</h3>
+          <div class="cb causes-box__4 col4 row4">
+            <img class="causes__img" src="images/causes/pen.png" alt="">
+            <h4>Проектирование</h4>
             <p>с созданием технического плана и 3D - визуализации выполняется в специальной программе и дает возможность “виртуальной прогулки” по новому саду. </p>
           </div>
-          <div class="causes__box">
-            <div class="causes__img"></div>
-            <h3>Гарантия</h3>
+          <div class="cb causes-box__5 col5 row5">
+            <img class="causes__img" src="images/causes/key.png" alt="">
+            <h4>Гарантия</h4>
             <p>качества и надежности - выполнение всех видов работ “под ключ”. Практический опыт - мое преимущество, а значит, все задуманное будет реализовано наилучшим образом.</p>
           </div>
-          <div class="causes__box">
-            <div class="causes__img"></div>
-            <h3>Обустройство</h3>
+          <div class="cb causes-box__6 col6 row6">
+            <img class="causes__img" src="images/causes/brick.png" alt="">
+            <h4>Обустройство</h4>
             <p>дорожек и площадок из любых видов тротуарной плитки и декоративных покрытий для оптимального зонирования и маршрутов передвижения. </p>
           </div>
         </div>
@@ -133,9 +131,8 @@
     <section class="portfolio">
       <div class="container">
         <div class="portfolio__inner">
-          
           <div class="portfolio__info">
-            <h2>Портфолио</h2>
+            <h2 class="portfolio__title title-30">Портфолио</h2>
             <h4>Мои проекты</h4>
             <p>Каждый заказ требует индивидуального подхода в проектировании и исполнении, поскольку пожелания клиентов в совокупности с ландшафтными особенностями обустраевомой территории уникальны.
               Благодаря многолетнему опыту в строительстве я точно знаю, как совместить красоту и функциональность. 
@@ -173,39 +170,53 @@
     <section class="reviews">
       <div class="container">
         <div class="reviews__inner">
-          <div class="reviews__title">Отзывы</div>
-          <div class="reviews__slider">
-            <div class="reviews-box">
-              <div class="reviews-box__img"></div>
-              <div class="reviews-box__name">Ольга</div>
-              <div class="reviwes-box__title">предприниматель</div>
-              <div class="reviews-box__info">
-                <p class="reviews-box__text">Олег оформил дорожки на моем загородном участке. 
-                  Мою идею воплотил в жизнь оптимально. Всю работу выполнил качественно и достаточно быстро. На моем участке есть что еще делать, обязательно обращусь к Олегу.</p>
-                <div class="reviews-box__date">05.05.2019</div>
-              </div>            
+          <div class="reviews__title title-30">Отзывы</div>
+          <div class="reviews__wrapper">
+            <div class="reviews__slider">
+              <div class="reviews-box">
+                  <img class="reviews__avatar" src="images/content/olga.png" alt="Avatar">
+                  <div class="reviews-box__title">
+                  <div class="reviews-box__name">Ольга</div>
+                  <div class="reviews-box__prof">предприниматель</div>
+                </div>
+                <div class="reviews-box__info">
+                  <p class="reviews-box__text">Олег оформил дорожки на моем загородном участке. 
+                    Мою идею воплотил в жизнь оптимально. Всю работу выполнил качественно и достаточно быстро. На моем участке есть что еще делать, обязательно обращусь к Олегу.</p>
+                  <div class="reviews-box__date">05.05.2019</div>
+                </div>            
+              </div>
+              <div class="reviews-box">
+                  <img class="reviews__avatar" src="images/content/nasta.png" alt="Avatar">
+                <div class="reviews-box__title">
+                  <div class="reviews-box__name">Анастасия</div>
+                  <div class="reviews-box__prof">бренд-менеджер</div>
+                </div>
+                <div class="reviews-box__info">
+                  <p class="reviews-box__text">Я захотела английский сад, чтобы минимум ухода. А еще прудик с беседкой. Главным для меня было найти надежного человека, который все сделает  качественно,  чтобы не тратить время на контроль. С Олегом все получилось, работой я довольна</p>
+                  <div class="reviews-box__date">18.07.2019</div>
+                </div>            
+              </div>
+              <div class="reviews-box">
+                  <img class="reviews__avatar" src="images/content/pavel.png" alt="Avatar">
+                <div class="reviews-box__title">
+                  <div class="reviews-box__name">Павел</div>
+                  <div class="reviews-box__prof">программист</div>
+                </div>
+                <div class="reviews-box__info">
+                  <p class="reviews-box__text">Мне, как человеку технического склада ума, нужны были готовые идеи и предложения. Олег сделал 3D-визуализацию, и она мне понравилась. От меня потребовалось только принять работу. И заплатить.</p>
+                  <div class="reviews-box__date">01.09.2019</div>
+                </div>            
+              </div>
+              <div class="reviews-box"></div>
+              <div class="reviews-box"></div>
+              <div class="reviews-box"></div>
             </div>
-            <div class="reviews-box">
-              <div class="reviews-box__img"></div>
-              <div class="reviews-box__name">Анастасия</div>
-              <div class="reviwes-box__title">бренд-менеджер</div>
-              <div class="reviews-box__info">
-                <p class="reviews-box__text">Я захотела английский сад, чтобы минимум ухода. А еще прудик с беседкой. Главным для меня было найти надежного человека, который все сделает  качественно,  чтобы не тратить время на контроль. С Олегом все получилось, работой я довольна</p>
-                <div class="reviews-box__date">18.07.2019</div>
-              </div>            
-            </div>
-            <div class="reviews-box">
-              <div class="reviews-box__img"></div>
-              <div class="reviews-box__name">Павел</div>
-              <div class="reviwes-box__title">программист</div>
-              <div class="reviews-box__info">
-                <p class="reviews-box__text">Мне, как человеку технического склада ума, нужны были готовые идеи и предложения. Олег сделал 3D-визуализацию, и она мне понравилась. От меня потребовалось только принять работу. И заплатить.</p>
-                <div class="reviews-box__date">01.09.2019</div>
-              </div>            
+            <button class="button-m button-rewiews">оставить отзыв</button>
+            <div class="social reviews__social">
+                  <a href="#" class="icon-vk"></a>
+                  <a href="#" class="icon-instagram"></a>
             </div>
           </div>
-          <button>оставить отзыв</button>
-          <div class="social"></div>
         </div>
       </div>
     </section>
@@ -213,7 +224,7 @@
       <div class="container">
         <div class="contact__inner">
           <div class="contact__title">
-            <div class="contact__title-1">Контакты</div>
+            <div class="contact__title-1 title-30">Контакты</div>
             <div class="contact__title-2">Свяжитесь со мной любым</div>
             <div class="contact__title-3">удобным для Вас способом!</div>
           </div>
@@ -230,18 +241,18 @@
                   <input type="text">
                 </div>
                 <div class="form__row">Ваш номер телефона
-                    <input type="tel" minlength="11" placeholder="+375 29 0000000">
+                    <input type="tel" minlength="11" placeholder="+375 xx xxxxxxx">
                 </div>
                 <div class="form__row">Ваш e-mail
                     <input type="email">
                 </div>
                 </fieldset>
               </div>
-              <button class="m-button" type="submit" >отправить</button>
+              <button class="button-form button-m" type="submit" >отправить</button>
             </form>
             <div class="contact__info">
               <p>Олег Мицкевич</p>
-              <a href="tel:+375297021751">+375297021751</a>
+              <a href="tel:+375297021751">+375 29 702 17 51</a>
               <a href="#">Miccckey@mail.ru</a>
             </div>
           </div>
